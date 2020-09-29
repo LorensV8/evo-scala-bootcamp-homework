@@ -15,14 +15,14 @@ class BasicSpec extends AnyFlatSpec {
 
   "gcd" should "be correct" in {
     gcd(2, 3) shouldEqual 1
-    gcd(12, 18) shouldEqual 6
+    gcd2(12, 36) shouldEqual 12
     gcd(3, 9) shouldEqual 3
     gcd(3, 3) shouldEqual 3
   }
 
   "gcd2" should "be correct" in {
     gcd2(2, 3) shouldEqual 1
-    gcd2(12, 18) shouldEqual 6
+    gcd2(12, 36) shouldEqual 12
     gcd2(3, 9) shouldEqual 3
     gcd2(3, 3) shouldEqual 3
   }

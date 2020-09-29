@@ -27,7 +27,7 @@ object Basics extends App{
       if (a == 0 && b == 0) 0
       else if (a == 0) Math.abs(b) * mult
       else if (b == 0) Math.abs(a) * mult
-      else if ((a & 1) == 0 && (b & 1) == 0) rec(a >> 1, b >> 1, mult + 1)
+      else if ((a & 1) == 0 && (b & 1) == 0) rec(a >> 1, b >> 1, mult << 1)
       else if ((a & 1) == 0) rec(a >> 1, b, mult)
       else if ((b & 1) == 0) rec(a, b >> 1, mult)
       else rec(Math.abs(a-b), Math.min(a, b), mult)
